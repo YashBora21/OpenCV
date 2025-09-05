@@ -14,5 +14,6 @@ while True:
         print("quitting")
         break
 camera.release()
+recorder.release()
 cv2.destroyAllWindows()
 
