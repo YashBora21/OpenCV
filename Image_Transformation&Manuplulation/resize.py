@@ -5,8 +5,12 @@ if img is not None:
 else:
     print("error")
 resized_mg=cv2.resize(img,(300,300))
+resized_mg1=cv2.resize(img,(300,100))
+
 cv2.imshow("orignal img",img)
 cv2.imshow("resized image",resized_mg)
+cv2.imshow("resized image1",resized_mg1)
+
 
 cv2.imwrite("resizedimg.png",resized_mg)
 cv2.waitKey(0)
